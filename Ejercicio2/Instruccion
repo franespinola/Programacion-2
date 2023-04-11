@@ -1,0 +1,29 @@
+Ejercicio 1
+Crear una clase Empleado con atributo nombre, apellido, legajo, aniosTrabajados
+Sobrescribir el método toString() para ver una representación entendible de un objeto de la clase
+Crear en la clase de arranque un Set de empleados.
+Crear 5 objetos empleado, donde 2 empleados tienen los mismos valores de atributos, agregarlos al set
+Iterar sobre el set y mostrar los objetos empleados
+Crear una herencia de la clase Empleado (EmpleadoSet) y modificarla para que cuando se agreguen EmpleadoSet a un set, los repetidos sean ignorados. Investigar como se hace.
+Crear 5 objetos empleadoSet, donde 2 empleados tienen los mismos valores de atributos, agregarlos al set
+Iterar sobre el set y mostrar los objetos empleados. Verificar que el duplicado no existe.
+
+Explicacion:
+La clase EmpleadoSet extiende de la clase Empleado, por lo que no es necesario volver a definir los atributos, ni los métodos toString(), getters o setters. Simplemente necesitamos sobrescribir los métodos equals y hashCode para que dos objetos EmpleadoSet sean considerados iguales si tienen los mismos valores en sus atributos.
+
+En el método equals comparamos si dos objetos EmpleadoSet tienen el mismo nombre, apellido, legajo y años trabajados.
+
+En el método hashCode utilizamos la función Objects.hash para obtener un valor hash a partir de los atributos del objeto. Este valor se utilizará internamente en el Set para determinar si dos objetos son iguales o no.
+
+Ten en cuenta que como hemos heredado la clase Empleado, podemos utilizar sus métodos y atributos sin necesidad de definirlos nuevamente en EmpleadoSet.
+
+Explicacion 2:
+Este código define la clase EmpleadoSet, que extiende de la clase Empleado y sobrescribe los métodos equals y hashCode. La clase EmpleadoSet es utilizada para representar objetos de tipo empleado que serán almacenados en un Set.
+
+En la definición del constructor, se utiliza el constructor de la clase padre (super) para inicializar los atributos heredados (nombre, apellido, legajo y aniosTrabajados).
+
+El método equals es sobrescrito para que dos objetos EmpleadoSet sean considerados iguales si tienen el mismo legajo, nombre y apellido. Dentro del método, primero se verifica si el objeto que se está comparando (o) es igual a this, en cuyo caso se devuelve true. Luego se verifica si el objeto o es nulo o si no es una instancia de EmpleadoSet, en cuyo caso se devuelve false. Finalmente, se convierte el objeto o a EmpleadoSet y se comparan los valores de los atributos.
+
+El método hashCode es sobrescrito para generar un valor hash a partir de los valores de los atributos nombre, apellido y legajo. Este valor será utilizado por la implementación del Set para verificar si dos objetos son iguales.
+
+La clase Objects es utilizada para generar el valor hash y comparar los objetos de forma segura contra nulos.

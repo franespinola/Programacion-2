@@ -1,0 +1,9 @@
+
+Ejercicio 1
+Crear una clase Persona con atributos nombre, apellido y edad.
+Crear una lista del tipo String y almacenar 5 nombres.
+Crear una lista del tipo String y almacenar 5 apellidos.
+Crear una lista de Personas y agregar 5 personas, donde el nombre y apellido corresponde a la posición 1 a 5 de las listas de nombre y apellido, y la edad es un número aleatorio entre 20 y 50 años.
+Reescribir el método toString() de la clase Persona para que muestre los datos formateados
+Mostrar la lista de personas
+Iterar sobre la lista de personas y buscar la persona más grande y mostrarla por pantalla.
