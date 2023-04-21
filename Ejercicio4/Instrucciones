@@ -1,0 +1,8 @@
+Ejercicio 4
+Crear una interfaz llamada FiguraGeometrica con los métodos calcularPerimetro y
+calcularSuperfice.
+Crear 3 clases que implementen la interfaz FiguraGeometrica. Pueden ser círculo, triángulo,
+rectángulo, cuadrado, pentágono.
+Crear una lista para almacenar figuras geométricas y agregar 5 elementos.
+Recorrer la lista mostrando información de cada uno de los objetos (recomendable que las
+clases prescriban el método toString) y mostrar el perímetro y la superficie de cada uno.

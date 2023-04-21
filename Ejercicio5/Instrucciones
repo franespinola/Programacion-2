@@ -1,0 +1,11 @@
+Modificar el ejercicio 4 y agregar 2 parámetros más, uno para la ubicación en el eje X y otro
+para el eje Y.
+Agregar excepciones para que:
+● Al crear el objeto los valores de los parámetros no pueden ser negativos. Los
+parámetros a contemplar deben ser los que definen a la figura geométrica. También
+debe verificarse al querer cambiar los parámetros con los setter.
+● Al crear el objeto los valores de los parámetros de la ubicación en eje X y eje Y no
+pueden ser negativos. También debe verificarse al querer cambiar los parámetros
+con los setter.
+El código debe incluir una parte donde se generan a propósito cada una de las excepciones
+definidas y el tratamiento del mismo.

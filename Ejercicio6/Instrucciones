@@ -1,0 +1,7 @@
+Crear una clase Empleado con atributo nombre, apellido, legajo, aniosTrabajados
+Sobrescribir el método toString() para ver una representación entendible de un objeto de la
+clase.
+Crear una lista con 5 empleados.
+Crear un mapa <String, Empleado> y copiar los 5 empleados, la clave del mapa debe ser un
+string con la combinación de apellido+",”+nombre.
+Iterar sobre el mapa y mostrar la clave y el objeto Empleado.
